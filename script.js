@@ -11,13 +11,17 @@ let number2 = "";
 
 // tombol kalkulator
 function button(){
-const buttonnumber =document.querySelectorAll(".button");
 
+const buttonnumber =document.querySelectorAll(".button");
 buttonnumber.forEach((button) =>{
    button.addEventListener("click", function(){
       if(terkunci){
          return
       }
+      else if(this.value=="." && number==""){
+         return
+      }
+      
       input=input+this.value;
       number= number +this.value;
       display.textContent = input;
@@ -61,6 +65,9 @@ const buttonoperation = document.querySelectorAll(".operation");
          else if(number1==""){
             return
          }
+         else if(number.endsWith(".")){
+            return
+         }
          else if(this.value =="="){
             if(!number2){
                return 
@@ -84,6 +91,25 @@ const buttonoperation = document.querySelectorAll(".operation");
          display.textContent=input;
          operations = this.value;
    })
+})
+   const btnbs = document.getElementById("btnbs");
+btnbs.addEventListener("click", function(){
+   if(terkunci){
+      return
+   }
+   input=input.slice(0,-1);
+   number=number.slice(0,-1);
+   if(operations==""){
+      number1=number
+   }
+   else{
+      number2=number
+   }
+      
+   display.textContent= input;
+   angka.textContent=number;
+
+
 })
 
 
