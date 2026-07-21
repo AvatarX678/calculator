@@ -83,8 +83,12 @@ const buttonoperation = document.querySelectorAll(".operation");
          }
          operationloop()
          if(terkunci){
+<<<<<<< HEAD
             return
          }
+=======
+            return}
+>>>>>>> a87d558cdea22371c5efb63ca864a3e3b10ff1b0
          input=input+this.value;
          number= ""
 
@@ -155,7 +159,11 @@ function operation(){
       reset(result)
    }
    else{
+<<<<<<< HEAD
       if(Number(number2)== 0){
+=======
+      if(Number(number2) == 0){
+>>>>>>> a87d558cdea22371c5efb63ca864a3e3b10ff1b0
          angka.textContent="gak bisa bagi dengan 0"
          terkunci = true
          return
