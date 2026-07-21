@@ -51,10 +51,14 @@ const buttonoperation = document.querySelectorAll(".operation");
             terkunci= false
             return
          }
-         if(terkunci){
+         else if(terkunci){
             return
          }
+         
          else if(number=="" && operations){
+            return
+         }
+         else if(number1==""){
             return
          }
          else if(this.value =="="){
