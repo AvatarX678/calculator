@@ -97,6 +97,11 @@ btnbs.addEventListener("click", function(){
    if(terkunci){
       return
    }
+   if(number === "" && operations !== ""){
+      operations = "";
+      number = number1; 
+      input = input.slice(0,-1); 
+   } 
    input=input.slice(0,-1);
    number=number.slice(0,-1);
    if(operations==""){
