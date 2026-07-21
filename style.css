@@ -1,0 +1,49 @@
+body{
+
+    display: flex;
+    justify-content: center;
+}
+#calculator{
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,1), 0 2px 4px -1px rgba(0,0,0,0.06);
+    box-sizing: border-box;
+    width: 250px;
+    height: 360px;
+    background-color: grey;
+    border-radius: 8px;
+}
+.button,.operation{
+    
+    border-radius: 8px;
+    box-sizing: border-box;
+    width: 45px;
+    height: 45px;
+    background-color:white ;
+}
+#calcu1,#calcu2,#calcu3,#calcu4,#calcu5{
+    display: flex;
+    padding: 5px;
+    justify-content: space-around;
+}
+.calcu1{
+  gap:120px;
+}
+#layar{
+    margin: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+#display,#angka{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    margin:0;
+    padding-bottom: 10px;
+}
+#angka{
+    font-size: 20px;
+}
