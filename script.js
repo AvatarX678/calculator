@@ -9,7 +9,6 @@ let operations = "";
 let number1 = "";
 let number2 = "";
 
-// tombol kalkulator
 function button(){
 
 const buttonnumber =document.querySelectorAll(".button");
@@ -101,7 +100,9 @@ btnbs.addEventListener("click", function(){
       operations = "";
       number = number1; 
       input = input.slice(0,-1); 
+      return
    } 
+   else{
    input=input.slice(0,-1);
    number=number.slice(0,-1);
    if(operations==""){
@@ -114,7 +115,7 @@ btnbs.addEventListener("click", function(){
    display.textContent= input;
    angka.textContent=number;
 
-
+   }
 })
 
 
