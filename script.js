@@ -100,6 +100,8 @@ btnbs.addEventListener("click", function(){
       operations = "";
       number = number1; 
       input = input.slice(0,-1); 
+      display.textContent= input;
+     angka.textContent=number;
       return
    } 
    else{
