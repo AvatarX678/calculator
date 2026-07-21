@@ -75,6 +75,9 @@ const buttonoperation = document.querySelectorAll(".operation");
             return
          }
          operationloop()
+         if(terkunci){
+            return
+         }
          input=input+this.value;
          number= ""
 
@@ -126,7 +129,7 @@ function operation(){
       reset(result)
    }
    else{
-      if(number2 == "0"){
+      if(Number(number2)== 0){
          angka.textContent="gak bisa bagi dengan 0"
          terkunci = true
          return
